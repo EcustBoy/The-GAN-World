@@ -11,7 +11,7 @@ Everything about Generative Adversarial Networks
 - [Contributing](#contribute)
 
 ## Introduction
-Generative Adversarial Networks are very popular generative models which can be trained to generate synthetic data that is similar to the training data. Basic idea behind GANs is, we have two models, one called **Generator** and another called **Discriminator**. Generator takes noise as an input and produces synthetic data. Then, this generated data(fake data) along with original data from training dataset is fed into disciminator. Here, discriminator tries to distinguish between original data and fake data. As learning proceeds generator learns to generate more and more realistic data and discriminator learns to get better at distinguishing generated and fake data. In other words, GANs learn a probability distribution of the training data which we can use later to sample the data from it. Here, we have two networks(generator and discriminator) which we need to train simultaneously. GANs are also famous for their unstable training, they are hard to train. But we have made great progress in this field especially in image generation. As of now, we have GAN models which can generate high-resolution realistic images.  GANs are so popular that every week new paper on GAN is coming out. This repository contains various resources which can be used to learn or implement GAN.
+Generative Adversarial Networks are very popular generative models which can be trained to generate synthetic data that is similar to the training data. Basic idea behind GANs is, we have two models, one called **Generator** and another called **Discriminator**. Generator takes noise as an input and produces synthetic data. Then, this generated data(fake data) along with original data from training dataset is fed into disciminator. Here, discriminator tries to distinguish between original data and fake data. As learning proceeds generator learns to generate more and more realistic data and discriminator learns to get better at distinguishing generated and fake data. In other words, GANs learn a probability distribution of the training data which we can use later to sample the data from it. Here, we have two networks(generator and discriminator) which we need to train simultaneously. GANs are also famous for their unstable training, they are hard to train. But we have made great progress in this field especially in image generation. As of now, we have GAN models which can generate high-resolution realistic images.  GANs are so popular that every week new paper on GAN is coming out. This repository contains various resources which can be used to learn or implement GANs.
 
 ## Papers and Code
 
@@ -32,6 +32,9 @@ Generative Adversarial Networks are very popular generative models which can be 
 ### DiscoGAN [[Paper](https://arxiv.org/abs/1703.05192)]
 * [PyTorch implementation of Learning to Discover Cross-Domain Relations with Generative Adversarial Networks](https://github.com/carpedm20/DiscoGAN-pytorch)
 * [TensorFlow and PyTorch implementation of DiscoGAN](https://github.com/wiseodd/generative-models/tree/master/GAN/disco_gan)
+
+### Bayesian GAN [[Paper](https://arxiv.org/abs/1705.09558)]
+* [TensorFlow implementation of Bayesian GAN](https://github.com/andrewgordonwilson/bayesgan/)
 
 ### Energy-based Generative Adversarial Network [[Paper](https://arxiv.org/abs/1609.03126)]
 * [TensorFlow and PyTorch implementaion of EBGAN](https://github.com/wiseodd/generative-models/tree/master/GAN/ebgan)
@@ -61,6 +64,7 @@ Generative Adversarial Networks are very popular generative models which can be 
 * [TensorFlow and PyTorch implementation of Softmax GAN](https://github.com/wiseodd/generative-models/tree/master/GAN/softmax_gan)
 
 ### Cycle GAN [[Paper](https://arxiv.org/pdf/1703.10593.pdf)]
+* [PyTorch implementation of Cycle GAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
 * [TensorFlow implementaion of Cycle GAN](https://github.com/XHUJOY/CycleGAN-tensorflow)
 * [Torch implementation of Cycle GAN](https://github.com/junyanz/CycleGAN)
 
@@ -70,6 +74,12 @@ Generative Adversarial Networks are very popular generative models which can be 
 ###  StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks [[Paper](https://arxiv.org/pdf/1612.03242v1.pdf)]
 * [TensorFlow implementation of StackGAN](https://github.com/hanzhanggit/StackGAN)
 
+### End-to-end Adversarial Learning for Generative Conversational Agents [[Paper](https://arxiv.org/abs/1711.10122)]
+* [Keras implementation](https://github.com/oswaldoludwig/Adversarial-Learning-for-Generative-Conversational-Agents)
+
+### StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation [[Paper](https://arxiv.org/abs/1711.09020)]
+* [PyTorch implementation of StarGAN](https://github.com/yunjey/StarGAN) 
+
 ### Unsupervised Cross-Domain Image Generation [[Paper](https://arxiv.org/abs/1611.02200)]
 ### Generative Adversarial Nets from a Density Ratio Estimation Perspective [[Paper](https://arxiv.org/abs/1610.02920)]
 ### BCGAN : Bayesian Conditional Generative Adverserial Networks [[Paper](https://arxiv.org/abs/1706.05477)]
@@ -78,8 +88,14 @@ Generative Adversarial Networks are very popular generative models which can be 
 ### SketchGAN : Adversarial Training For Sketch Retrieval [[Paper](https://arxiv.org/abs/1607.02748)]
 ### Unrolled Generative Adversarial Networks [[Paper](https://arxiv.org/abs/1611.02163)]
 ### TextureGAN : Controlling Deep Image Synthesis with Texture Patches [[Paper](https://arxiv.org/abs/1706.02823)]
+* [PyTorch implementation of TextureGAN](https://github.com/janesjanes/Pytorch-TextureGAN)
 ### Temporal Generative Adversarial Nets [[Paper](https://arxiv.org/abs/1611.06624v1)]
-
+### Recurrent Topic-Transition GAN for Visual Paragraph Generation [[Paper](https://arxiv.org/abs/1703.07022)]
+### Triangle Generative Adversarial Networks [[Paper](https://arxiv.org/abs/1709.06548)]
+### AttnGAN: Fine-Grained Text to Image Generation with Attentional Generative Adversarial Networks [[Paper](https://arxiv.org/abs/1711.10485)]
+### Structured Generative Adversarial Networks [[Paper](https://arxiv.org/abs/1711.00889)]
+### BigGan: Large Scale GAN Training for High Fidelity Natural Image Synthesis [[Paper](https://arxiv.org/abs/1809.11096)]
+* [PyTorch implementation BigGan](https://github.com/AaronLeong/BigGAN-pytorch)
 
 
 ## Projects
@@ -93,6 +109,7 @@ Generative Adversarial Networks are very popular generative models which can be 
 
 ## Tutorials, Blogs and Talks
 * [NIPS 2016 Tutorial on Generative Adversarial Networks by Ian Goodfellow](https://arxiv.org/abs/1701.00160) - This tutorial by Ian Goodfellow (Inventor of GAN) covers almost everything you need to get started with Generative Adversarial Networks. You will get to know about- Why you should study generative models and GANs?, How GAN works?, Research frontiers in GANs and more. 
+* [GANs in Action: Deep learning with Generative Adversarial Networks](https://www.manning.com/books/gans-in-action) This book takes you from no knowledge of GANs to understanding and implementing some of the more advanced architectures at the practitioner level. Focus on applications and code.
 
 ### Blogs
 
@@ -123,6 +140,9 @@ Generative Adversarial Networks are very popular generative models which can be 
 ## Other Resources
 * [Last chapter of Deep Learning Book : Deep Generative Models](https://www.deeplearningbook.org/contents/generative_models.html)
 * [The GAN Zoo](https://deephunt.in/the-gan-zoo-79597dc8c347)
+* [How to Train a GAN? Tips and tricks to make GANs work.](https://github.com/soumith/ganhacks)
+* [Collection of generative models in PyTorch and TensorFlow](https://github.com/wiseodd/generative-models)
+* [keras Implementation of Generative Adversarial Networks](https://github.com/eriklindernoren/Keras-GAN)
 
 ## Contributing
 * Feel free to make pull requests or you can write me at **vsavan7@gmail.com**.
